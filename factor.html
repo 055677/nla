@@ -1,0 +1,57 @@
+<!-- category/factor.html -->
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>factor.am Լուրեր</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Global styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <!-- Category-specific styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Pass source name to script -->
+  <script>window.SOURCE_NAME = 'factor';</script>
+  <!-- Filter & render logic -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header-container">
+    <div class="logo-group">
+      <img src="../logo1.png" alt="Library Logo" class="logo-img">
+      <span class="library-name">ՀԱՅԱՍՏԱՆԻ ԱԶԳԱՅԻՆ ԳՐԱԴԱՐԱՆ</span>
+    </div>
+  </div>
+  <div class="separator"></div>
+
+  <!-- Filters -->
+  <div class="filter-controls">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Որոնել լուրեր..." class="search-input">
+      <button id="searchButton" class="search-button">Որոնել</button>
+    </div>
+    <div class="filter-group">
+      <select id="categoryFilter" class="category-filter">
+        <option value="all">Բոլոր կատեգորիաները</option>
+      </select>
+      <label for="datePicker">Ընտրել ամսաթիվը:</label>
+      <input type="date" id="datePicker">
+    </div>
+  </div>
+
+    <!-- … after your filters … -->
+
+    <div id="newsContainer" class="news-container">
+      <p class="loading-message">Բեռնվում է...</p>
+    </div>
+  
+    <!-- pagination controls go here -->
+    <div id="pagination" class="pagination"></div>
+  
+    <script>window.SOURCE_NAME='factor';</script>
+    <script src="script.js" defer></script>
+  
+  </div>
+</body>
+</html>
